@@ -1,65 +1,43 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Image from 'next/image'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="">
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>KIR•OO•PAH</title>
+        <link rel="icon" href="/favicon.ico"/>
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+      <main className="h-screen bg-black">
+        <section className="items-center text-accent1 body-font">
+          <div className="container flex flex-col items-center justify-center px-5 py-32 mx-auto md:py-5">
+            <Image
+              src="/logo_big.png"
+              alt="Kiroopah Big Logo"
+              quality={100}
+              className="object-cover object-center w-5/6 mb-5 rounded lg:w-2/6 md:w-3/6"
+              width={1000}
+              height={500}
+            />
+            <div className="w-full text-center lg:w-2/3">
+              <h1 className="mb-8 text-3xl font-bold text-accent1 title-font sm:text-4xl">Drop 2 - Coming Soon</h1>
+              <div className="flex justify-center">
+                <a href="https://www.instagram.com/kir.oo.pah/">
+                  <button className="inline-flex px-6 py-2 text-lg bg-black border-2 rounded-md text-accent1 hover:text-black hover:bg-accent1">Instagram</button>
+                </a>
+                <a href="https://twitter.com/Kajanth_K">
+                  <button className="inline-flex px-6 py-2 ml-4 text-lg text-black border-2 rounded-md bg-accent1 hover:bg-black hover:text-accent1">Twitter</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      {/* <footer className="">
+
+      </footer> */}
     </div>
   )
 }
