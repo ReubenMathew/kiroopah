@@ -24,10 +24,10 @@ export default function Home() {
               <h1 className="mb-8 text-2xl font-bold text-accent1 title-font sm:text-4xl">Drop 2 - Coming Soon</h1>
               <div className="flex justify-center">
                 <a href="https://www.instagram.com/kir.oo.pah/">
-                  <button className="inline-flex px-6 py-2 text-lg bg-black border-2 rounded-md text-accent1 hover:text-black hover:bg-accent1">Instagram</button>
+                  <button className="inline-flex px-6 py-2 text-lg bg-black border-2 text-accent1 hover:text-black hover:bg-accent1">Instagram</button>
                 </a>
                 <a href="https://twitter.com/Kajanth_K">
-                  <button className="inline-flex px-6 py-2 ml-4 text-lg text-black border-2 rounded-md bg-accent1 hover:bg-black hover:text-accent1">Twitter</button>
+                  <button className="inline-flex px-6 py-2 ml-4 text-lg text-black border-2 bg-accent1 hover:bg-black hover:text-accent1">Twitter</button>
                 </a>
               </div>
             </div>
